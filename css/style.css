@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/**************************************************
+* Selettori Tag
+**************************************************/
+body {
+  color: white;
+}
+
+ul  {
+  list-style: none;
+}
+
+
+/**************************************************
+* Layout
+**************************************************/
+
+/**************** Top Container ****************/
+.root-top-container {
+  background-color: red;
+  height: 100vh;
+  padding-bottom: 65px;
+  display: flex;
+}
+
+/**************** Root Nav Bar ****************/
+.root-nav-bar {
+  background-color: rgb(0, 0, 131);
+  width: 40px;
+  height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+/* Link */
+.nav-bar-link {
+  border: 1px solid green;
+  flex-shrink: 0;
+}
+/* Playlist */
+.nav-bar-playlist {
+  border: 1px solid green;
+  flex-grow: 1;
+}
+/* User */
+.nav-bar-user {
+  border: 1px solid green;
+  flex-shrink: 0;
+}
+
+
+
+
+/**************** Root Main View ****************/
+.root-main-view {
+  border: 1px solid pink;
+  width: 100vw;
+  height: auto;
+  padding-left: 40px;
+  /* display: flex; */
+}
+/* Top bar */
+.main-view-top-bar {
+  border: 1px solid orange;
+  display: block;
+}
+/* Guide Sectin */
+.main-view-guide-section {
+  border: 1px solid orange;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Title */
+.main-view-title {
+  border: 1px solid orange;
+}
+
+/* Album Section */
+.main-view-album-section {
+  border: 1px solid orange;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+/**************** Now Playing Bar ****************/
+.root-now-playing-bar {
+  background-color: rgb(129, 0, 0);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  height: 65px;
+  width: 100%;
+}
+/* Artist */
+.now-playing-bar-artist {
+  border: 1px solid yellow;
+}
+/* Time */
+.now-playing-bar-time {
+  border: 1px solid yellow;
+  flex-grow: 1;
+}
+/* Audio */
+.now-playing-bar-audio {
+  border: 1px solid yellow;
+  display: inline-block;
+}
+
+
+
+
+/**************************************************
+* Utilities
+**************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************
+* Media Query
+**************************************************/
