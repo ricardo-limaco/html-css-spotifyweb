@@ -1,43 +1,300 @@
 <!DOCTYPE html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="mask-icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Spotify</title>
 </head>
 
 <body>
-  <div class="root-top-container">
+  <div class="top-container">
+    <!-- Side bar -->
+    <div class="side-bar-container pd-side-bar">
 
-    <div class="root-nav-bar">
-      <div class="nav-bar-link">link</div>
-      <div class="nav-bar-playlist">playslist</div>
-      <div class="nav-bar-user">user</div>
+      <!-- Nav -->
+      <div class="side-bar-nav">
+
+        <div class="side-bar-nav-logo">
+          <div class="logo-small">
+            <a href="#">
+              <img src="img/logo-small.svg" alt="logo-small">
+            </a>
+          </div>
+
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo.svg" alt="logo">
+            </a>
+          </div>
+        </div>
+
+        <div class="side-bar-nav-home">
+          <a href="#">
+            <img src="img/home.svg" alt="home">
+            <span class="mobile-none">Home</span>
+          </a>
+        </div>
+
+        <div class="side-bar-nav-search">
+          <a href="#">
+            <img src="img/search.svg" alt="search">
+            <span class="mobile-none">Cerca</span>
+          </a>
+        </div>
+
+        <div class="side-bar-nav-library">
+          <a href="#">
+            <img src="img/libreria.svg" alt="library">
+            <span class="mobile-none">La tua libreria</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Playlist -->
+      <div class="side-bar-playlist">
+        <div class="mobile-none">
+
+          <h3>PLAYLIST</h3>
+
+          <div class="side-bar-playlist-create">
+            <i class="fas fa-plus-square"></i>
+            <span>Crea Playlist</span>
+          </div>
+
+          <div class="side-bar-playlist-name">
+            <ul>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- User -->
+      <div class="side-bar-user">
+
+        <div class="side-bar-user-download">
+          <a href="#">
+            <img src="img/download.svg" alt="donwload">
+            <span class="mobile-none">Installa app</span>
+          </a>
+        </div>
+
+        <div class="side-bar-user-account">
+          <a href="#">
+            <img src="img/profile.svg" alt="profile">
+            <span class="mobile-none">John Doe</span>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="root-main-view">
-      <div class="main-view-top-bar">main-view-top-bar</div>
-      <div class="main-view-guide-section">main-view-guide-section</div>
-      <h1 class="main-view-title">title</h1>
-      <div class="main-view-album-section">main-view-album-section</div>
+    <!-- Main View -->
+    <div class="main-view-container">
+
+      <!-- Top bar -->
+      <div class="main-view-top-bar">
+        <a href="#" class="main-view-top-bar-btn">EFFETTUA L'UPGRADE</a>
+      </div>
+
+      <div class="container-main-overflow">
+        <!-- Guide Section -->
+        <div class="main-view-guide-section">
+          <ul class="main-view-guide-section-link">
+            <li><a href="#">IN EVIDENZA</a></li>
+            <li><a href="#">PODCAST</a></li>
+            <li><a href="#">CLASSIFICHE</a></li>
+            <li><a href="#">GENERE E MOOD</a></li>
+            <li><a href="#">NUOVE USCITE</a></li>
+            <li><a href="#">SCOPRI</a></li>
+          </ul>
+        </div>
+
+        <!-- Section Album -->
+        <section>
+          <!-- Title(Recently played) -->
+          <h1 class="main-view-title">Recently played</h1>
+
+          <!-- Album -->
+          <div class="main-view-album-section">
+            <!-- Card 1 -->
+            <div class="main-view-album-section-card">
+              <div class="main-view-album-section-card-img">
+                <img src="img/metal_lifting.jpg" alt="Heavy-Metal">
+              </div>
+              <h3>Heavy Metal</h3>
+              <p>Subtitle</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="main-view-album-section-card">
+              <div class="main-view-album-section-card-img">
+                <img src="img/stranger.jpeg" alt="Stranger">
+              </div>
+              <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+              <p>Kyle Dixon & Michael Stein</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="main-view-album-section-card">
+              <div class="main-view-album-section-card-img">
+                <img src="img/aquietplace.jpeg" alt="Aquietplace">
+              </div>
+              <h3>A quiet place</h3>
+              <p>Subtitle</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="main-view-album-section-card">
+              <div class="main-view-album-section-card-img">
+                <img src="img/split.jpeg" alt="Split">
+              </div>
+              <h3>Split</h3>
+              <p>Subtitle</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="main-view-album-section-card">
+              <div class="main-view-album-section-card-img">
+                <img src="img/cure.jpeg" alt="A-cure-for-wellness">
+              </div>
+              <h3>A cure for wellness</h3>
+              <p>Subtitle</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="main-view-album-section-card">
+              <div class="main-view-album-section-card-img">
+                <img src="img/sinister.jpeg" alt="Sinister">
+              </div>
+              <h3>Sinister</h3>
+              <p>Subtitle</p>
+            </div>
+          </div>
+
+          <!-- Title(Creato per te)-->
+          <h1 class="main-view-title">Creato per John Doe</h1>
+          <p class="main-view-title-subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
+
+          <!-- Album -->
+          <div class="main-view-album-section">
+            <!-- Card 1 -->
+            <div class="main-view-album-section-card">
+              <div class="main-view-album-section-card-img">
+                <img src="img/radar.jpeg" alt="Release-radar">
+              </div>
+              <h3>Releaser Radar</h3>
+            </div>
+            <!-- Card 2 -->
+            <div class="main-view-album-section-card">
+              <div class="main-view-album-section-card-img">
+                <img src="img/mixdaily.jpeg" alt="Daily-mix-1">
+              </div>
+              <h3>Daily Mix 1</h3>
+            </div>
+          </div>
+
+          <!-- Title(Artisti più popolari)-->
+          <h1 class="main-view-title">Artisti più popolari</h1>
+          <p class="main-view-title-subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
+
+          <!-- Album -->
+          <div class="main-view-album-section">
+            <!-- Card 1 -->
+            <div class="main-view-album-section-card">
+              <div class="main-view-album-section-card-img">
+                <img src="img/youg.jpeg" alt="Lana-del-Rey" class="border-radius">
+              </div>
+              <h3>Lana del Rey</h3>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="main-view-album-section-card">
+              <div class="main-view-album-section-card-img">
+                <img src="img/einaudi.jpeg" alt="Ludovico-Einauidi" class="border-radius">
+              </div>
+              <h3>Ludovico Einauidi</h3>
+            </div>
+          </div>
+        </section>
+
+      </div>
     </div>
-
-    
-
+  </div>
   </div>
 
 
 
+  <!-- Now Playing bar -->
+  <div class="now-playing-bar-container">
+
+    <!-- Artist -->
+    <div class="now-playing-bar-artist">
+
+      <div class="now-playing-bar-artist-album">
+        <img src="img/sinister.jpeg" alt="album-sinister">
+      </div>
+
+      <div class="now-playing-bar-artist-name">
+        <h4>Sinister</h4>
+        <p>Brano Nome</p>
+      </div>
+
+      <div class="now-playing-bar-artist-icon">
+        <i class="far fa-heart"></i>
+        <i class="far fa-folder"></i>
+      </div>
+    </div>
+
+
+    <!-- Player -->
+    <div class="now-playing-bar-player">
+
+
+      <div class="now-playing-bar-player-control">
+        <i class="fas fa-random"></i>
+        <i class="fas fa-step-backward"></i>
+        <i class="far fa-play-circle"></i>
+        <i class="fas fa-step-forward"></i>
+        <i class="fas fa-undo-alt"></i>
+      </div>
+
+
+      <div class="now-playing-bar-player-time">
+        <p>0:25</p>
+        <div class="time-line">
+          <div class="time-line-progress"></div>
+        </div>
+        <p>4:35</p>
+      </div>
 
 
 
+    </div>
 
-
-  <div class="root-now-playing-bar">
-    <div class="now-playing-bar-artist">artist</div>
-    <div class="now-playing-bar-time">time</div>
-    <div class="now-playing-bar-audio">audio</div>
+    <!-- Audio -->
+    <div class="now-playing-bar-audio">
+      <i class="fas fa-list"></i>
+      <i class="fas fa-desktop"></i>
+      <i class="fas fa-volume-up"></i>
+      <div class="time-line max-width-80">
+        <div class="time-line-progress"></div>
+      </div>
+    </div>
   </div>
 
 
 </body>
+
 </html>
